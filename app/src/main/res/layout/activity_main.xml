@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alanmaxwell.tiny4412_led.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="LED TEST" />
+    <Button
+        android:id="@+id/btn_led_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALL ON"
+        />
+    <CheckBox
+        android:id="@+id/cb_led1"
+        android:text="LED1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        />
+    <CheckBox
+        android:id="@+id/cb_led2"
+        android:text="LED2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        />
+    <CheckBox
+        android:id="@+id/cb_led3"
+        android:text="LED3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        />
+    <CheckBox
+        android:id="@+id/cb_led4"
+        android:text="LED4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        />
+</LinearLayout>
