@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
+import com.example.alanmaxwell.tiny4412_led.hardlibrary.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         mLedsOnOffBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                HardControl hardControl=new HardControl();
+
                 ledOn=!ledOn;
                 if (ledOn){
                     mLedsOnOffBtn.setText("ALL OFF");
